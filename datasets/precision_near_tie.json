@@ -1,0 +1,38 @@
+{
+  "name": "precision_near_tie",
+  "algorithm": "both",
+  "riders": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "O1",
+      "x": 1.0000000000005,
+      "y": 0
+    },
+    {
+      "id": "O2",
+      "x": 1,
+      "y": 0
+    }
+  ],
+  "expected": {
+    "greedyTotal": 1,
+    "optimalTotal": 1,
+    "unassignedRiderIds": [],
+    "unassignedOrderIds": [
+      "O1"
+    ],
+    "greedySequence": [
+      [
+        "R1",
+        "O2",
+        1
+      ]
+    ]
+  }
+}

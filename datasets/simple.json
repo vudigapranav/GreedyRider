@@ -1,0 +1,44 @@
+{
+  "name": "simple",
+  "algorithm": "both",
+  "riders": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "R2",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "id": "R3",
+      "x": 20,
+      "y": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "O1",
+      "x": 1,
+      "y": 0
+    },
+    {
+      "id": "O2",
+      "x": 11,
+      "y": 0
+    },
+    {
+      "id": "O3",
+      "x": 21,
+      "y": 0
+    }
+  ],
+  "expected": {
+    "greedyTotal": 3,
+    "optimalTotal": 3,
+    "unassignedRiderIds": [],
+    "unassignedOrderIds": []
+  }
+}

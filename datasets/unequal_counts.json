@@ -1,0 +1,41 @@
+{
+  "name": "unequal_counts",
+  "algorithm": "both",
+  "riders": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "R2",
+      "x": 10,
+      "y": 0
+    },
+    {
+      "id": "R3",
+      "x": 20,
+      "y": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "O1",
+      "x": 1,
+      "y": 0
+    },
+    {
+      "id": "O2",
+      "x": 11,
+      "y": 0
+    }
+  ],
+  "expected": {
+    "greedyTotal": 2,
+    "optimalTotal": 2,
+    "unassignedRiderIds": [
+      "R3"
+    ],
+    "unassignedOrderIds": []
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "name": "greedy_failure",
+  "algorithm": "both",
+  "riders": [
+    {
+      "id": "R1",
+      "x": 0,
+      "y": 0
+    },
+    {
+      "id": "R2",
+      "x": 3,
+      "y": 0
+    },
+    {
+      "id": "R3",
+      "x": 20,
+      "y": 0
+    }
+  ],
+  "orders": [
+    {
+      "id": "O1",
+      "x": 1,
+      "y": 0
+    },
+    {
+      "id": "O2",
+      "x": -2,
+      "y": 0
+    },
+    {
+      "id": "O3",
+      "x": 20,
+      "y": 1
+    }
+  ],
+  "expected": {
+    "greedyTotal": 7,
+    "optimalTotal": 5,
+    "unassignedRiderIds": [],
+    "unassignedOrderIds": [],
+    "greedySequence": [
+      [
+        "R1",
+        "O1",
+        1
+      ],
+      [
+        "R3",
+        "O3",
+        1
+      ],
+      [
+        "R2",
+        "O2",
+        5
+      ]
+    ],
+    "optimalAssignments": [
+      [
+        "R1",
+        "O2",
+        2
+      ],
+      [
+        "R2",
+        "O1",
+        2
+      ],
+      [
+        "R3",
+        "O3",
+        1
+      ]
+    ],
+    "difference": 2,
+    "greedyOverheadPercent": 40
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "greedy-rider-algorithm-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": "^20.19.0 || >=22.12.0" },
+  "scripts": {
+    "build:backend": "cmake -S backend -B build -DCMAKE_BUILD_TYPE=Release && cmake --build build -j 4",
+    "build": "npm run build:backend && npm run build:frontend",
+    "build:frontend": "tsc -p frontend/tsconfig.json && vite build --config frontend/vite.config.ts",
+    "dev:api": "node bridge/server.mjs",
+    "dev": "vite --config frontend/vite.config.ts",
+    "preview": "vite preview --config frontend/vite.config.ts",
+    "test:cpp": "./build/algorithm_tests datasets",
+    "test:api": "node --test backend/tests/IntegrationTests.mjs",
+    "test": "ctest --test-dir build --output-on-failure",
+    "test:browser": "playwright test"
+  },
+  "dependencies": { "react": "19.3.0", "react-dom": "19.3.0" },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/node": "20.19.43",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "typescript": "7.0.2",
+    "vite": "8.3.3"
+  }
+}

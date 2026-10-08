@@ -1,0 +1,12 @@
+{
+  "name": "empty_both",
+  "algorithm": "both",
+  "riders": [],
+  "orders": [],
+  "expected": {
+    "greedyTotal": 0,
+    "optimalTotal": 0,
+    "unassignedRiderIds": [],
+    "unassignedOrderIds": []
+  }
+}

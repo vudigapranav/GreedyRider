@@ -1,0 +1,34 @@
+{
+  "name": "negative_coordinates",
+  "algorithm": "both",
+  "riders": [
+    {
+      "id": "R1",
+      "x": -3,
+      "y": -4
+    },
+    {
+      "id": "R2",
+      "x": 6,
+      "y": -2
+    }
+  ],
+  "orders": [
+    {
+      "id": "O1",
+      "x": -3,
+      "y": -3
+    },
+    {
+      "id": "O2",
+      "x": 5,
+      "y": -2
+    }
+  ],
+  "expected": {
+    "greedyTotal": 2,
+    "optimalTotal": 2,
+    "unassignedRiderIds": [],
+    "unassignedOrderIds": []
+  }
+}

@@ -1,0 +1,7 @@
+/build/
+/build-sanitized/
+.DS_Store
+/node_modules/
+/frontend/dist/
+/test-results/
+/playwright-report/

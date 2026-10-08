@@ -1,0 +1,26 @@
+{
+  "name": "empty_riders",
+  "algorithm": "both",
+  "riders": [],
+  "orders": [
+    {
+      "id": "O1",
+      "x": 1,
+      "y": 2
+    },
+    {
+      "id": "O2",
+      "x": 3,
+      "y": 4
+    }
+  ],
+  "expected": {
+    "greedyTotal": 0,
+    "optimalTotal": 0,
+    "unassignedRiderIds": [],
+    "unassignedOrderIds": [
+      "O1",
+      "O2"
+    ]
+  }
+}
